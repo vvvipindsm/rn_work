@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: My first step
-        run: echo This is the first step of my first job.
+        run: echo ${{secrets.ANDROID_FIREBASE_APP_ID}}
+      - name: My Action
+        run: echo ${{secrets.ANDROID_FIREBASE_APP_ID_TY}}
