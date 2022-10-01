@@ -1,0 +1,19 @@
+name: Tesing ## name of the workflow
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+   android-build:
+    name: Android Build
+    runs-on: ubuntu-latest 
+    
+      steps:
+         - name: Get yarn cache directory path
+          id: yarn-cache-dir-psdadath
+          run: echo "sdfsdfsf"
+
+  
