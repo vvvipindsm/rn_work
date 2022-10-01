@@ -2,6 +2,10 @@
   "name": "git_workaction",
   "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+github.com:vvvipindsm/rn_work_flow.git"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -10,6 +14,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "np": "^7.6.2",
+    "postversion": "react-native-version",
     "react": "18.1.0",
     "react-native": "0.70.1"
   },
@@ -21,6 +27,7 @@
     "eslint": "^7.32.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.72.1",
+    "react-native-version": "^4.0.0",
     "react-test-renderer": "18.1.0"
   },
   "jest": {
