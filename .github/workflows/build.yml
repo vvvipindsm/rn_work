@@ -62,4 +62,4 @@ jobs:
           appId: 1:233149173131:android:4ef39f1816bfb197d0738e
           token: 4/0ARtbsJoEZSCUv4vdlS6KOiHjIUcokHoouUt0tYs6B3oqQfmIAzchdOBwcRoc-7BUC6Xa9g
           groups: testers
-          file: ${{steps.sign_app.outputs.signedReleaseFile}}
+          file: android/app/build/outputs/apk/release/app-release.apk
