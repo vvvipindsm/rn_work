@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 const App = () => {
-  return <Text>dsfsf</Text>;
+  return <Text>new</Text>;
 };
 
 export default App;
