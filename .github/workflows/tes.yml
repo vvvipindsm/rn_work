@@ -5,15 +5,9 @@ on:
     branches:
       - main
 
-
 jobs:
-   android-build:
-    name: Android Build
-    runs-on: ubuntu-latest 
-    
-      steps:
-         - name: Get yarn cache directory path
-          id: yarn-cache-dir-psdadath
-          run: echo "sdfsdfsf"
-
-  
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo This is the first step of my first job.
