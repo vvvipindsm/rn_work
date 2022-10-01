@@ -39,7 +39,7 @@ const Section = ({children, title}): Node => {
             color: isDarkMode ? Colors.white : Colors.black,
           },
         ]}>
-        change test
+        change test for testing
       </Text>
       <Text
         style={[
