@@ -11,11 +11,12 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "np": "np --no-publish",
+    "postversion": "react-native-version",
     "lint": "eslint ."
   },
   "dependencies": {
     "np": "^7.6.2",
-    "postversion": "react-native-version",
     "react": "18.1.0",
     "react-native": "0.70.1"
   },
