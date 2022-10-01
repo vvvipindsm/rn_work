@@ -3,7 +3,7 @@ name: Android Build ## name of the workflow
 on:
   workflow_dispatch: # To trigger manual build
   release:
-    types: [published]
+    types: [main]
 
 jobs:
   android-build:
