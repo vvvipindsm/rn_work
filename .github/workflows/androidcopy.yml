@@ -1,0 +1,18 @@
+name: Android Build ## name of the workflow
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  android-build:
+    name: Android Build
+    runs-on: ubuntu-latest # using ubuntu latest version / or you can use a specific version
+
+    steps:
+      - name: Check out Git repository # clone the repo to local ci workspace
+        uses: actions/checkout@v2
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo ${{ runner.os }}
