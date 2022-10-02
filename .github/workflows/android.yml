@@ -45,6 +45,13 @@ jobs:
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
 
+      - name: Create the Keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_SIGNING_KEY }}
+        run: |
+          # import keystore from secrets
+          echo $ANDROID_SIGNING_KEY | base64 -d > $RUNNER_TEMP/my-upload-key.keystore
+
       - name: Generate App APK
         run: |
           cd android && ./gradlew assembleRelease --no-daemon
